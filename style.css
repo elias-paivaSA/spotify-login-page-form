@@ -10,7 +10,8 @@ body {
     margin: auto;
     max-width: 500px;
     min-height: 100vh;
-
+    color: white;
+    overflow: auto;
 }
 
 header {
@@ -72,3 +73,39 @@ select {
     border: 1px solid gray;
     border-radius: 5px;
 }
+
+input[type="radio"] {
+    width: 5%;
+}
+
+input[type="checkbox"] {
+    width: 5%;
+}
+
+label {
+    margin-left: 10px;
+}
+
+.hrzt-line {
+    margin: 20px 0 5px 0;
+}
+
+.bkg-checkbox {
+    border: 1px solid #302c2c;
+    background-color: #302c2c;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form button {
+    margin: 25px 0;
+    padding: 10px 110px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+    background-color: #1ad764;
+    border-style: none;
+    font-size: 14px;
+}
+

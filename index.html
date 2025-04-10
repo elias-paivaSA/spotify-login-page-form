@@ -19,7 +19,7 @@
         <h1>Se inscreva e comece a curtir</h1>
     </header>
 
-    <section>
+    <main>
         <form action="">
             <label for="mail">Endereço de email</label><br>
             <input type="email" name="mail" id="mail" placeholder="nome@dominio.com"><br>
@@ -51,18 +51,67 @@
                     </select>
                     <input type="number" id="year" placeholder="aaaa">
                 </div>
-            </div>
-            <p>Please select your age:</p>
-            <input type="radio" id="age1" name="age" value="30">
-            <label for="age1">0 - 30</label><br>
-            <input type="radio" id="age2" name="age" value="60">
-            <label for="age2">31 - 60</label><br>
-            <input type="radio" id="age3" name="age" value="100">
-            <label for="age3">61 - 100</label><br><br>
-            <input type="submit" value="Submit">
 
+                <p>Gênero</p>
+                <div class="radio">
+                    <input type="radio" id="homem" name="homem">
+                    <label for="radio">Homem</label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" id="mulher" name="mulher">
+                    <label for="mulher">Mulher</label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" id="naobinario" name="naobinario">
+                    <label for="naobinario">Não binário</label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" id="outro" name="outro">
+                    <label for="outro">Outro</label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" id="naodizer" name="naodizer">
+                    <label for="naodizer">Prefiro não dizer</label>
+                </div>
+            </div>
         </form>
+    </main>
+
+    <section class="hrzt-line">
+        <hr>
     </section>
+
+    <section>
+        <h2>Termos e Condições</h2>
+    </section>
+
+    <form>
+        <div class="bkg-checkbox">
+            <input type="checkbox" id="marketing-spotify-messages" name="naodizer">
+            <label for="marketing-spotify-messages">Não quero receber mensagens de marketing do Spotify</label><br><br>
+        </div>
+
+        <div class="bkg-checkbox">
+            <input type="checkbox" id="share-data" name="share-data">
+            <label for="share-data">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para
+                fins de marketing</label><br><br>
+        </div>
+
+        <div class="bkg-checkbox">
+            <input type="checkbox" id="agree-terms-conditions" name="agree-terms-conditions">
+            <label for="agree-terms-conditions">Eu concordo com os Termos e Condições de Uso do Spotify</label>
+        </div>
+
+        <button>Inscrever-se</button>
+    </form>
+
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
