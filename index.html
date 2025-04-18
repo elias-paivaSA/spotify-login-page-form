@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,28 +13,29 @@
     <title>Spotify - Form</title>
 </head>
 
-<body>
-    <header>
-        <i class="bi bi-spotify"></i>
-        <h1>Se inscreva e comece a curtir</h1>
+<body class="bg-black w-[80%] max-w-[500px] min-h-screen m-auto text-white
+overflow-auto font-[Montserrat]">
+    <header class="text-center text-black m-0 my-[30px]"></header>
+        <i class="bi bi-spotify text-[30px]"></i>
+        <h1 class="my-[20px] text-[30px] font-extrabold">Se inscreva e comece a curtir</h1>
     </header>
 
     <main>
         <form action="">
-            <label for="mail">Endereço de email</label><br>
-            <input type="email" name="mail" id="mail" placeholder="nome@dominio.com"><br>
+            <label class="text-[whitesmoke] font-medium mb-[5px]" for="mail">Endereço de email</label><br>
+            <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border" type="email" name="mail" id="mail" placeholder="nome@dominio.com"><br>
 
-            <label for="password">Senha</label><br>
-            <input type="password" name="password" id="password" placeholder="Digite a senha"><br>
+            <label class="text-[whitesmoke] font-medium mb-[5px]" for="password">Senha</label><br>
+            <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border" type="password" name="password" id="password" placeholder="Digite a senha"><br>
 
-            <label for="name">Nome</label><br>
-            <input type="text" name="name" id="name" placeholder="Nome que aparecerá no perfil">
+            <label class="text-[whitesmoke] font-medium mb-[5px]" for="name">Nome</label><br>
+            <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border" type="text" name="name" id="name" placeholder="Nome que aparecerá no perfil">
 
             <div class="birthday">
-                <label for="day">Data de nascimento</label>
-                <div class="flex-birthday">
-                    <input type="number" id="day" placeholder="dd">
-                    <select>
+                <label class="text-[whitesmoke] font-medium mb-[5px]" for="day">Data de nascimento</label>
+                <div class="flex-birthday flex">
+                    <input class="w-[20%] mr-[10px] border border-gray-500 rounded-[5px]" type="number" id="day" placeholder="dd">
+                    <select class="w-[60%] mr-[10px] border border-gray-500 rounded-[5px] h-[43px]">
                         <option value="0">Mês</option>
                         <option value="1">Janeiro</option>
                         <option value="2">Fevereiro</option>
@@ -49,33 +50,33 @@
                         <option value="11">Novembro</option>
                         <option value="12">Dezembro</option>
                     </select>
-                    <input type="number" id="year" placeholder="aaaa">
+                    <input class="w-[30%] border border-gray-500 rounded-[5px]" type="number" id="year" placeholder="aaaa">
                 </div>
 
                 <p>Gênero</p>
                 <div class="radio">
-                    <input type="radio" id="homem" name="genero">
-                    <label for="homem">Homem</label>
+                    <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border w-[5%]" type="radio" id="homem" name="genero">
+                    <label class="text-[whitesmoke] font-medium mb-[5px]" for="homem">Homem</label>
                 </div>
 
                 <div class="radio">
-                    <input type="radio" id="mulher" name="genero">
-                    <label for="mulher">Mulher</label>
+                    <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border w-[5%]" type="radio" id="mulher" name="genero">
+                    <label class="text-[whitesmoke] font-medium mb-[5px]" for="mulher">Mulher </label>
                 </div>
 
                 <div class="radio">
-                    <input type="radio" id="naobinario" name="genero">
-                    <label for="naobinario">Não binário</label>
+                    <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border w-[5%]" type="radio" id="naobinario" name="genero">
+                    <label class="text-[whitesmoke] font-medium mb-[5px]" for="naobinario">Não binário</label>
                 </div>
 
                 <div class="radio">
-                    <input type="radio" id="outro" name="genero">
-                    <label for="outro">Outro</label>
+                    <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border w-[5%]" type="radio" id="outro" name="genero">
+                    <label class="text-[whitesmoke] font-medium mb-[5px]" for="outro">Outro</label>
                 </div>
 
                 <div class="radio">
-                    <input type="radio" id="naodizer" name="genero">
-                    <label for="naodizer">Prefiro não dizer</label>
+                    <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border w-[5%]" type="radio" id="naodizer" name="genero">
+                    <label class="text-[whitesmoke] font-medium mb-[5px]" for="naodizer">Prefiro não dizer</label>
                 </div>
             </div>
         </form>
@@ -91,24 +92,24 @@
 
     <form>
         <div class="bkg-checkbox">
-            <input type="checkbox" id="marketing-spotify-messages" name="naodizer">
-            <label for="marketing-spotify-messages">Não quero receber mensagens de marketing do Spotify</label><br><br>
+            <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border w-[5%];" type="checkbox" id="marketing-spotify-messages" name="naodizer">
+            <label class="text-[whitesmoke] font-medium mb-[5px]" for="marketing-spotify-messages">Não quero receber mensagens de marketing do Spotify</label><br><br>
         </div>
 
         <div class="bkg-checkbox">
-            <input type="checkbox" id="share-data" name="share-data">
-            <label for="share-data">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para
+            <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border w-[5%];" type="checkbox" id="share-data" name="share-data">
+            <label class="text-[whitesmoke] font-medium mb-[5px]" for="share-data">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para
                 fins de marketing</label><br><br>
         </div>
 
         <div class="bkg-checkbox">
-            <input type="checkbox" id="agree-terms-conditions" name="agree-terms-conditions">
-            <label for="agree-terms-conditions">Eu concordo com os Termos e Condições de Uso do Spotify</label>
+            <input class="border border-gray-500 rounded-[5px] my-[3px] mb-[10px] w-full p-[10px] text-[16px] box-border w-[5%]" type="checkbox" id="agree-terms-conditions" name="agree-terms-conditions">
+            <label class="text-[whitesmoke] font-medium mb-[5px]" for="agree-terms-conditions">Eu concordo com os Termos e Condições de Uso do Spotify</label>
         </div>
 
-        <div class="btn">
-        <button>Inscrever-se</button>
-        </div>
+        
+        <button class="my-[25px] px-[110px] py-[10px] rounded-[20px] text-black font-medium bg-[#1ad764] border-0 text-[14px] w-full">Inscrever-se</button>
+        
     </form>
 
     <footer>
